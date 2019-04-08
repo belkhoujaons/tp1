@@ -1,0 +1,80 @@
+
+.parableu 
+{
+    color: blue ;
+}
+#parared 
+{
+    color: red;
+}
+*{
+    color: yellow; 
+}
+.bleu 
+{
+    color: blue ;
+}
+p.vert 
+{
+    color: green ;
+}
+.tv{
+    color:green ; 
+}
+.bord{
+    border:1px solid green ;
+}
+a {
+    color:red;text-decoration:none;
+}
+a:hover {
+    color:green;text-decoration:under;
+}
+a:visited{
+    color : grey;
+}
+h2{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 50px ;
+    font-style: italic ;
+    font-weight: 500;
+    text-align: center ;
+    color:#00ff00 ;
+}
+h3 {
+    color : red;
+    text-align: center;
+    font-size: 30px ;
+    opacity: 0.5 ;
+    border-style: double;
+    border-radius: 20 px ;
+
+}
+*{
+    
+    background-attachment: scroll;
+
+}
+li{
+    display: inline ;
+    list-style-image: url(C:\Users\ASUS\Desktop\formalab\formalab_html_1\images);
+    padding: 50px ;
+    font-size: 50px ;
+    color : saddlebrown ;
+}
+.un{
+     
+    background-color:#ff6600 ;
+    height: 250px;  
+    
+}
+.deux{
+    font-size: 50px ;
+    height: 250px;
+}
+.trois{
+    background-color:#4c4c4c;
+    height: 250px; 
+}
+
+
