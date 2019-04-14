@@ -4,19 +4,34 @@ include "config.php";
 //appel fonction
 $base =connect();
 //reccuperation des donnee
-$e= $_REQUEST['email'];
+$n= $_REQUEST['nom'];
+$p=$_REQUEST ['prénom'];
+$nu=$_REQUEST ['numéro'];
+$g=$_REQUEST ['gender'];
+$e=$_REQUEST ['mail'];
+$d=$_REQUEST ['date_de_naissance'];
+$na=$_REQUEST ['nati'];
+$in=$_REQUEST ['interet'] ;
 $m=$_REQUEST ['mdp'];
-$mdpc =md5($m);
-$req="INSERT INTO users (id,email, password) VALUES (null,'$e','$m')";
-//exec INSERT , UPDATE , DELETE
-//type retour exec int|boolean
-//trajaa int itha requ jawha behii : int fih nbr de ligne li aamaltelhom insertion
-//trajaa boolean false en cas d echec
+
+$m =md5($m);
+$req="INSERT INTO cc (ID,NOM,PRENOM,EMAIL,GENDER,NATIONALITE,INTERET,DATEDENAISSANCE,NUMTEL,MOTDEPASSE) VALUES (null,'$n','$p','$e','$g','$na','$in','$d','$nu','$mdp')";
 $resp= $base->exec($req) ;
 if($resp==1){
-    echo "donnees jawha behi";
+    echo "all done !";
 }
 else{
-    echo"bara thabet fel code"; 
+    echo"quelque chose qui cloche"; 
+}
+
+
+$des= $_REQUEST['nom'];
+$req="INSERT INTO todo (TODOS,DESCRIPTION) VALUES (null,'$des')";
+$resp= $base->exec($req) ;
+if($resp==1){
+    echo "all done !";
+}
+else{
+    echo"quelque chose qui cloche"; 
 }
 ?>

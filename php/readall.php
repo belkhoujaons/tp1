@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> inscri</title>
+    <title> inscrit</title>
     <meta charset="utf-8">
 </head>
 

@@ -1,18 +1,14 @@
 <?php
 function connect (){
    $server = "localhost";
-   $base ="isg";
+   $base ="formalab1";
    $username ="root";
    $pass="";
    try {
-       // code ..
        $con =new PDO("mysql:host=$server;dbname=$base",$username,$pass);
-
        return $con;
       }catch(PDOException $e){
-        //exeception ..
-
-    die("erreuuuuuuur !! :o ". $e->getMessage()." :o");
+    die("erreur ". $e->getMessage().":o");
     }
     }
 ?>

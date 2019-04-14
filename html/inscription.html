@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     </head>
     <body>
+            <form method="GET" action="../php/inscri.php">
             <img src="../images/47317618_404815216724133_7594555807820152832_n.png" height="100" width="200"><br>
             <a href="../html/connexion.html" > <input type="button" value="connexion"class="btn btn-info"></a>
             <a href="../html/home.html" > <input type="button" value="home"class="btn btn-info"></a><br>
@@ -19,7 +20,7 @@
             <h4>email</h4><input type="email" name="mail" placeholder="donnez votre email"><br>
             <h4>date</h4><input type="date" name="date_de_naissance" ><br>
             <h4>nationalité</h4><br>
-            <select>
+            <select name="nati">
                     <option value="nationalité" disabled selected>nationlité</option>
                     <option value="tunisien" >tunisien</option>
                     <option value="algérien" >algirien</option>
@@ -27,16 +28,17 @@
                     <option value="libyen" >libain</option>
                     <h4>interets</h4><br>
             </select><br><br>
-            <input type="checkbox" value="noire et blanc">noire et blanc<br>
+            <input type="checkbox" name="interet" value="noire et blanc">noire et blanc<br>
         <input type="checkbox" value="artisana">artisana<br>
         <input type="checkbox" value="architecture">architecture<br>
         <input type="checkbox" value="portraits">portraits<br> 
         <input type="checkbox" value="nature">nature<br>
         <input type="checkbox" value="autres">autres<br><br>
-        <h4>mot de passe</h4><input type="password" value="motdepasse" placeholder="donnez une mot de passe">
-        <h4> confirmation mot de passe</h4><input type="password" value="conmotdepasse" placeholder="confirmez votre mot de passe"><br><br>
+        <h4>mot de passe</h4><input type="password" name="mdp" value="motdepasse" placeholder="donnez une mot de passe">
+        <h4> confirmation mot de passe</h4><input type="password" name="mdp" value="conmotdepasse" placeholder="confirmez votre mot de passe"><br><br>
         <a href="../html/connexion.html" > <input type="button" value="envoyer"class="btn btn-info"  ></a> 
         <input type="reset" value="effacer" class="btn btn-danger">
+        </form>
 
    
    
