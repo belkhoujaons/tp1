@@ -24,14 +24,4 @@ else{
     echo"quelque chose qui cloche"; 
 }
 
-
-$des= $_REQUEST['nom'];
-$req="INSERT INTO todo (TODOS,DESCRIPTION) VALUES (null,'$des')";
-$resp= $base->exec($req) ;
-if($resp==1){
-    echo "all done !";
-}
-else{
-    echo"quelque chose qui cloche"; 
-}
 ?>
